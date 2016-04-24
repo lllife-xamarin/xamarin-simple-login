@@ -8,6 +8,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleLogin", "SimpleLogin\SimpleLogin.csproj", "{913CC6EF-E189-424B-9B8E-87EFC6304785}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|iPhoneSimulator = Debug|iPhoneSimulator
@@ -30,6 +32,18 @@ Global
 		{DB8B7EBC-51F2-4581-8F85-A930D67C2A1D}.Release|iPhone.Build.0 = Release|iPhone
 		{DB8B7EBC-51F2-4581-8F85-A930D67C2A1D}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
 		{DB8B7EBC-51F2-4581-8F85-A930D67C2A1D}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{913CC6EF-E189-424B-9B8E-87EFC6304785}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{913CC6EF-E189-424B-9B8E-87EFC6304785}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{913CC6EF-E189-424B-9B8E-87EFC6304785}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{913CC6EF-E189-424B-9B8E-87EFC6304785}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{913CC6EF-E189-424B-9B8E-87EFC6304785}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{913CC6EF-E189-424B-9B8E-87EFC6304785}.Debug|iPhone.Build.0 = Debug|iPhone
+		{913CC6EF-E189-424B-9B8E-87EFC6304785}.Release|iPhone.ActiveCfg = Release|iPhone
+		{913CC6EF-E189-424B-9B8E-87EFC6304785}.Release|iPhone.Build.0 = Release|iPhone
+		{913CC6EF-E189-424B-9B8E-87EFC6304785}.Ad-Hoc|iPhone.ActiveCfg = Release|iPhone
+		{913CC6EF-E189-424B-9B8E-87EFC6304785}.Ad-Hoc|iPhone.Build.0 = Release|iPhone
+		{913CC6EF-E189-424B-9B8E-87EFC6304785}.AppStore|iPhone.ActiveCfg = Release|iPhone
+		{913CC6EF-E189-424B-9B8E-87EFC6304785}.AppStore|iPhone.Build.0 = Release|iPhone
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = CodeOnlyProject\CodeOnlyDemo.csproj
