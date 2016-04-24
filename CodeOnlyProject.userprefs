@@ -1,0 +1,3 @@
+﻿<Properties StartupItem="CodeOnlyProject/CodeOnlyDemo.csproj">
+  <MonoDevelop.Ide.ItemProperties.CodeOnlyDemo PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.DBED7CB4-E7C8-417B-8CE0-D58007B6454C" />
+</Properties>
