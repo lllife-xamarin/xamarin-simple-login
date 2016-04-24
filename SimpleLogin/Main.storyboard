@@ -23,16 +23,27 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact">
                                     <rect key="frame" x="20" y="84" width="360" height="30"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="20" y="84" width="335" height="30"/>
                                     <mask key="constraints">
-                                        <include reference="320"/>
+                                        <include reference="431"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <rect key="frame" x="20" y="84" width="627" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="420"/>
                                     </mask>
                                 </variation>
                                 <constraints>
-                                    <constraint id="320" firstAttribute="width" constant="360"/>
+                                    <constraint id="420" firstAttribute="width" constant="627"/>
+                                    <constraint id="431" firstAttribute="width" constant="335"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="320"/>
+                                        <exclude reference="420"/>
+                                        <exclude reference="431"/>
                                     </mask>
                                 </variation>
                             </textField>
@@ -42,16 +53,27 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <variation key="widthClass=compact">
                                     <rect key="frame" x="20" y="122" width="360" height="30"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="20" y="122" width="335" height="30"/>
                                     <mask key="constraints">
-                                        <include reference="323"/>
+                                        <include reference="436"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <rect key="frame" x="20" y="122" width="627" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="423"/>
                                     </mask>
                                 </variation>
                                 <constraints>
-                                    <constraint id="323" firstAttribute="width" constant="360"/>
+                                    <constraint id="423" firstAttribute="width" constant="627"/>
+                                    <constraint id="436" firstAttribute="width" constant="335"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="323"/>
+                                        <exclude reference="423"/>
+                                        <exclude reference="436"/>
                                     </mask>
                                 </variation>
                             </textField>
@@ -66,6 +88,28 @@
                                 <connections>
                                     <segue id="394" destination="87" kind="show"/>
                                 </connections>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="20" y="617" width="335" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="441"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <rect key="frame" x="20" y="325" width="627" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="426"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="426" firstAttribute="width" constant="627"/>
+                                    <constraint id="441" firstAttribute="width" constant="335"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="426"/>
+                                        <exclude reference="441"/>
+                                    </mask>
+                                </variation>
                             </button>
                         </subviews>
                         <variation key="default">
@@ -75,10 +119,12 @@
                                 <exclude reference="327"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="318"/>
-                                <exclude reference="319"/>
-                                <exclude reference="321"/>
-                                <exclude reference="322"/>
+                                <exclude reference="429"/>
+                                <exclude reference="430"/>
+                                <exclude reference="434"/>
+                                <exclude reference="435"/>
+                                <exclude reference="439"/>
+                                <exclude reference="440"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -87,19 +133,25 @@
                                 <include reference="35"/>
                                 <include reference="327"/>
                             </mask>
-                            <mask key="constraints">
-                                <include reference="318"/>
-                                <include reference="319"/>
-                                <include reference="321"/>
-                                <include reference="322"/>
-                            </mask>
                         </variation>
                         <constraints>
-                            <constraint id="318" firstItem="34" firstAttribute="top" secondItem="21" secondAttribute="top" constant="84"/>
-                            <constraint id="319" firstItem="21" firstAttribute="trailing" secondItem="34" secondAttribute="trailing" constant="20"/>
-                            <constraint id="321" firstItem="35" firstAttribute="top" secondItem="21" secondAttribute="top" constant="122"/>
-                            <constraint id="322" firstItem="21" firstAttribute="trailing" secondItem="35" secondAttribute="trailing" constant="20"/>
+                            <constraint id="429" firstItem="34" firstAttribute="top" secondItem="21" secondAttribute="top" constant="84"/>
+                            <constraint id="430" firstItem="21" firstAttribute="trailing" secondItem="34" secondAttribute="trailing" constant="20"/>
+                            <constraint id="434" firstItem="35" firstAttribute="top" secondItem="21" secondAttribute="top" constant="122"/>
+                            <constraint id="435" firstItem="21" firstAttribute="trailing" secondItem="35" secondAttribute="trailing" constant="20"/>
+                            <constraint id="439" firstItem="21" firstAttribute="bottom" secondItem="327" secondAttribute="bottom" constant="20"/>
+                            <constraint id="440" firstItem="21" firstAttribute="trailing" secondItem="327" secondAttribute="trailing" constant="20"/>
                         </constraints>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="429"/>
+                                <include reference="430"/>
+                                <include reference="434"/>
+                                <include reference="435"/>
+                                <include reference="439"/>
+                                <include reference="440"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="UserTextField" destination="34" id="name-outlet-34"/>
@@ -177,4 +229,8 @@
             <point key="canvasLocation" x="141" y="322"/>
         </scene>
     </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination" type="retina47"/>
+        <simulatedOrientationMetrics key="orientation"/>
+    </simulatedMetricsContainer>
 </document>
