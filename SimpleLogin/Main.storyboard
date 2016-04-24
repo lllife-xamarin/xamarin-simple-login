@@ -183,30 +183,120 @@
                                 <variation key="widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="20" y="90" width="360" height="30"/>
                                 </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="20" y="90" width="335" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="457"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="457" firstAttribute="width" constant="335"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="457"/>
+                                    </mask>
+                                </variation>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="444" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="97" y="236" width="72" height="31"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="236" width="335" height="31"/>
+                                    <mask key="constraints">
+                                        <include reference="447"/>
+                                        <include reference="448"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="447" firstAttribute="width" constant="335"/>
+                                    <constraint id="448" firstAttribute="height" constant="31"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="447"/>
+                                        <exclude reference="448"/>
+                                    </mask>
+                                </variation>
+                            </slider>
+                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" id="449" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="80" y="346" width="94" height="27"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="140" y="346" width="94" height="29"/>
+                                </variation>
+                            </stepper>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Text" borderStyle="roundedRect" minimumFontSize="17" id="454" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="138" y="455" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="49" y="433" width="97" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="460"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="460" firstAttribute="width" constant="97"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="460"/>
+                                    </mask>
+                                </variation>
+                            </textField>
                         </subviews>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="96"/>
+                                <exclude reference="444"/>
+                                <exclude reference="449"/>
+                                <exclude reference="454"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="97"/>
-                                <exclude reference="98"/>
+                                <exclude reference="445"/>
+                                <exclude reference="446"/>
+                                <exclude reference="452"/>
+                                <exclude reference="453"/>
+                                <exclude reference="455"/>
+                                <exclude reference="456"/>
+                                <exclude reference="463"/>
+                                <exclude reference="464"/>
+                                <exclude reference="465"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="96"/>
                             </mask>
-                            <mask key="constraints">
-                                <include reference="97"/>
-                                <include reference="98"/>
-                            </mask>
                         </variation>
                         <constraints>
-                            <constraint id="97" firstItem="96" firstAttribute="leading" secondItem="88" secondAttribute="leading" constant="165"/>
-                            <constraint id="98" firstItem="96" firstAttribute="top" secondItem="88" secondAttribute="top" constant="90"/>
+                            <constraint id="445" firstItem="88" firstAttribute="trailing" secondItem="444" secondAttribute="trailing" constant="20"/>
+                            <constraint id="446" firstItem="444" firstAttribute="top" secondItem="88" secondAttribute="top" constant="236"/>
+                            <constraint id="452" firstItem="449" firstAttribute="centerX" secondItem="444" secondAttribute="centerX"/>
+                            <constraint id="453" firstItem="88" firstAttribute="bottom" secondItem="449" secondAttribute="bottom" constant="292"/>
+                            <constraint id="455" firstItem="88" firstAttribute="trailing" secondItem="96" secondAttribute="trailing" constant="20"/>
+                            <constraint id="456" firstItem="96" firstAttribute="top" secondItem="88" secondAttribute="top" constant="90"/>
+                            <constraint id="463" firstItem="454" firstAttribute="leading" secondItem="88" secondAttribute="leading" constant="49"/>
+                            <constraint id="464" firstItem="88" firstAttribute="bottom" secondItem="454" secondAttribute="bottom" constant="204"/>
+                            <constraint id="465" firstItem="454" firstAttribute="centerY" secondItem="449" secondAttribute="centerY" constant="87"/>
                         </constraints>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="444"/>
+                                <include reference="449"/>
+                                <include reference="454"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="445"/>
+                                <include reference="446"/>
+                                <include reference="452"/>
+                                <include reference="453"/>
+                                <include reference="455"/>
+                                <include reference="456"/>
+                                <include reference="463"/>
+                                <include reference="464"/>
+                                <include reference="465"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="89" userLabel="First Responder" sceneMemberID="firstResponder"/>
