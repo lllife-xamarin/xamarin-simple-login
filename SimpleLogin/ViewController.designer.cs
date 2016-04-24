@@ -16,10 +16,6 @@ namespace SimpleLogin
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton LoginButton { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITextField PasswordTextField { get; set; }
 
         [Outlet]
@@ -28,11 +24,6 @@ namespace SimpleLogin
 
         void ReleaseDesignerOutlets ()
         {
-            if (LoginButton != null) {
-                LoginButton.Dispose ();
-                LoginButton = null;
-            }
-
             if (PasswordTextField != null) {
                 PasswordTextField.Dispose ();
                 PasswordTextField = null;

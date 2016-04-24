@@ -16,10 +16,6 @@ namespace SimpleLogin
 			base.ViewDidLoad ();
 			// Perform any additional setup after loading the view, typically from a nib.
 
-			LoginButton.TouchUpInside += delegate {
-				var controller = Storyboard.InstantiateViewController("IndexViewController") as IndexViewController;
-				PresentViewController (controller, true, null);
-			};
 		}
 
 		public override void DidReceiveMemoryWarning ()
