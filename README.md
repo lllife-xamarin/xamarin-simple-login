@@ -1,7 +1,6 @@
-SimpleLogin
-==========
+### Xamarin Simple Login
 
-!()[Screen/10_LoginScreenAutoresizing.png]
+![](Screenshots/10_LoginScreenAutoresizing.png)
 
 This sample is the application that will be built at the end of the [Creating iOS Applications in Code Using Visual Studio](http://developer.xamarin.com/guides/ios/application_fundamentals/ios_code_only/) guide.
 
@@ -50,7 +49,7 @@ public partial class AppDelegate : UIApplicationDelegate
 
 #### CustomViewController.cs
 
-```
+```csharp
 public class CustomViewController : UIViewController
 {
     public override void ViewDidLoad()
